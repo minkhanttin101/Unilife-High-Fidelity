@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unilife</title>
+    <script src="https://kit.fontawesome.com/c4f1b21a57.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+    <link rel="icon" type="png" href="Favicon.png">
+</head>
+<body>
+
+    <!-- Sidebar Toggle Button (Checkbox) -->
+    <input type="checkbox" checked id="sidebar-toggle" class="sidebar-checkbox">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <label for="sidebar-toggle" class="close-btn">☰</label>
+        <div class="logo">
+            <img src="Logo.png" alt="Logo">
+        </div>
+        <nav>
+            <a href="index.html" class="item"><i class="fa-solid fa-house"></i>Class</a>
+            <a href="registration.html" class="item"><i class="fa-regular fa-address-card"></i>Registration</a>
+            <a href="timeline.html" class="item active"><i class="fa-solid fa-tv"></i> Timeline</a>
+            <a href="calendar.html" class="item"><i class="fa-regular fa-calendar"></i> Calendar</a>
+            <!-- <a href="lost$found.html" class="item"><i class="fa-solid fa-magnifying-glass"></i> Lost & Found</a>
+            <a href="campusNav.html" class="item"><i class="fa-solid fa-map-pin"></i> Campus Navigator</a> -->
+            <a href="acc.html" class="item"><i class="fa-solid fa-user"></i> Account</a>
+        </nav>
+        <!-- Move the Setting nav to the bottom by using flexbox -->
+        <nav>
+            <a href="setting.html" class="item"><i class="fa-solid fa-gear"></i> Setting</a>
+        </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <main>
+        <header>
+            <label for="sidebar-toggle" class="menu-btn">☰ Timeline</label>
+            <div class="search-bar-container">
+                <div class="search-bar">
+                    <input type="text" placeholder="Search for something">
+                </div>
+                <div class="gear-profile">
+                    <i class="fa-regular fa-message"></i>
+                    <i class="fa-regular fa-bell"></i>
+                   <a href="setting.html"><i  class="fa-solid fa-gear"></i> </a>
+                    <div class="profile-icon">
+                        <a href="acc.html">
+                            <img src="rose.jpg" alt="Profile Picture">
+                            </a>
+                    </div>
+                </div>
+            </div>
+        </header>
+            <div class="timeline-content">
+                <div class="events">
+                    <h2>Event</h2>
+                <div class="event-list">
+                    <div class="event">
+                        <img src="payment.png" alt="Road Closure">
+                        <div class="eventText">
+                            <h3>Freshmen (ID. 674xxx) Registration & Payment Appointment Schedule</h3>
+                            <p>Semester 2/2024 - 12/12/2024 4:00</p>
+                        </div>
+                        
+                    </div>
+                    <div class="event">
+                        <img src="awareness.png" alt="Road Closure">
+                        <div class="eventText">
+                            <h3>Awareness on Call Center Scams and Ransom Threat</h3>
+                            <p>29/11/2024 16:00</p>
+                        </div>
+                        
+                    </div>
+                    <div class="event">
+                        <img src="Road closure.png" alt="Road Closure">
+                        <div class="eventText">
+                            <h3>Temporary Campus Road Closure Announcement</h3>
+                            <p>24/12/2024 13:00</p>
+                        </div>
+                    </div>
+                    <div class="event">
+                        <img src="chiristmas.png" alt="Road Closure">
+                        <div class="eventText">
+                            <h3>Christmas Tree Lighting Ceremony 2024</h3>
+                            <p>24/12/2024 13:00</p>
+                        </div>
+                        
+                    </div>
+                    <div class="event">
+                        <img src="aufunrun.png" alt="Road Closure">
+                        <div class="eventText">
+                            <h3>Au FUN RUN CEREMONY</h3>
+                            <p>24/12/2024 13:00</p>
+                        </div>
+                        
+                    </div>
+                    <div class="event">
+                        <img src="waikru.png" alt="Road Closure">
+                        <div class="eventText">
+                            <h3>Wai Kru Ceremony Announcement</h3>
+                            <p>July 18, 2024</p>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Uni Forum Section -->
+            <div class="uni-forum">
+                <h2>Uni Forum</h2>
+                <div class="forum-list">
+                    <div class="forum-input">
+                        <input type="text" placeholder="What's on your mind?">
+                        <button>Post</button>
+                    </div>
+                    <div class="forum-post">
+                        <h3>Finding Tutor for Mathematics Subject</h3>
+                        <div class="forumContent">
+                            <div class="posticon">
+                                <img src="rose.jpg" alt="Profile Picture">
+                            </div>
+                            <div class="posttext">
+                                <p><strong>Jennie</strong> - 6h ago</p>
+                                <p>I'm having difficulties solving my mathematics assignment and don’t know how to proceed. I need a tutor to assist me. Please feel free to respond or reach out directly.</p>
+                            </div>
+                        </div>
+
+                        <div class="timelineBtn">
+                            <button>Add response (10)</button>
+                            <button id="likeBtn" onclick="toggleLike()"><i class="fa-solid fa-thumbs-up"></i><span id="likeCount"> 10</span></button>
+                        </div>
+                        
+                    </div>
+                    <div class="forum-post">
+                            <h3>Looking for a Partner for Visa Extension</h3>
+                            <div class="forumContent">
+                                <div class="posticon">
+                                    <img src="rose.jpg" alt="Profile Picture">
+                                </div>
+                                <div class="posttext">
+                                    <p><strong>Song Hye Kyo</strong> - 10h ago</p>
+                                    <p>I'm seeking a reliable partner to assist with the visa extension process. If you have experience or resources to help, please reach out. Collaboration and mutual support are welcome.</p>
+                                </div>
+                            </div>
+    
+                            <div class="timelineBtn">
+                                <button>Add response (10)</button>
+                                <button id="likeBtn" onclick="toggleLike()"><i class="fa-solid fa-thumbs-up"></i><span id="likeCount"> 11</span></button>
+                            </div>
+                            
+                    </div>
+                    <div class="forum-post">
+                        <h3>Looking for a Partner for Visa Extension</h3>
+                        <div class="forumContent">
+                            <div class="posticon">
+                                <img src="rose.jpg" alt="Profile Picture">
+                            </div>
+                            <div class="posttext">
+                                <p><strong>Song Hye Kyo</strong> - 10h ago</p>
+                                <p>I'm seeking a reliable partner to assist with the visa extension process. If you have experience or resources to help, please reach out. Collaboration and mutual support are welcome.</p>
+                            </div>
+                        </div>
+
+                        <div class="timelineBtn">
+                            <button>Add response (10)</button>
+                            <button id="likeBtn" onclick="toggleLike()"><i class="fa-solid fa-thumbs-up"></i><span id="likeCount"> 10</span></button>
+                        </div>
+                        
+                    </div>
+                    <div class="forum-post">
+                        <h3>Looking for a Partner for Visa Extension</h3>
+                        <div class="forumContent">
+                            <div class="posticon">
+                                <img src="rose.jpg" alt="Profile Picture">
+                            </div>
+                            <div class="posttext">
+                                <p><strong>Song Hye Kyo</strong> - 10h ago</p>
+                                <p>I'm seeking a reliable partner to assist with the visa extension process. If you have experience or resources to help, please reach out. Collaboration and mutual support are welcome.</p>
+                            </div>
+                        </div>
+
+                        <div class="timelineBtn">
+                            <button>Add response (10)</button>
+                            <button id="likeBtn" onclick="toggleLike()"><i class="fa-solid fa-thumbs-up"></i><span id="likeCount"> 10</span></button>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+        </div>
+    </main>
+</body>
+</html>

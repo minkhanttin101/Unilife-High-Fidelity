@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', sans-serif;
+        }
+        body {
+            display: flex;
+            background-color: #f5f5f5;
+        }
+        .sidebar {
+            width: 220px;
+            background: white;
+            padding: 20px;
+            height: 100vh;
+            box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .sidebar h2 {
+            display: flex;
+            align-items: center;
+            font-size: 22px;
+            margin-bottom: 30px;
+        }
+        .sidebar ul {
+            list-style: none;
+        }
+        .sidebar ul li {
+            display: flex;
+            align-items: center;
+            padding: 10px 0;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .sidebar ul li.active {
+            font-weight: bold;
+        }
+        .main-content {
+            flex: 1;
+            padding: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .profile-card {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            width: 50%;
+        }
+        .profile-card img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+        .profile-details {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            margin-top: 20px;
+            text-align: left;
+        }
+        .profile-details label {
+            font-size: 14px;
+            font-weight: 600;
+            display: block;
+            margin-bottom: 5px;
+        }
+        .profile-details input {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <h2>Uni-Life</h2>
+        <ul>
+            <li>Class</li>
+            <li>Registration</li>
+            <li>Timeline</li>
+            <li>Calendar</li>
+            <li>Lost & Found</li>
+            <li>Campus</li>
+            <li class="active">Account</li>
+        </ul>
+    </div>
+    <div class="main-content">
+        <div class="profile-card">
+            <img src="https://via.placeholder.com/100" alt="Profile">
+            <h3>Rosé Park</h3>
+            <p><strong>4.0 G.P.A</strong> | <strong>36 Credit</strong></p>
+            <div class="profile-details">
+                <div>
+                    <label>First Name</label>
+                    <input type="text" value="Rosé">
+                </div>
+                <div>
+                    <label>Last Name</label>
+                    <input type="text" value="Park">
+                </div>
+                <div>
+                    <label>Faculty</label>
+                    <input type="text" value="Music">
+                </div>
+                <div>
+                    <label>Department</label>
+                    <input type="text" value="Music">
+                </div>
+                <div>
+                    <label>Email</label>
+                    <input type="text" value="blackpink@gmail.com">
+                </div>
+                <div>
+                    <label>Country/Region</label>
+                    <input type="text" value="Korea">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

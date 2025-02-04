@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unilife</title>
+    <script src="https://kit.fontawesome.com/c4f1b21a57.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+    <link rel="icon" type="png" href="Favicon.png">
+</head>
+<body>
+
+    <!-- Sidebar Toggle Button (Checkbox) -->
+    <input type="checkbox" checked  id="sidebar-toggle" class="sidebar-checkbox">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <label for="sidebar-toggle" class="close-btn">☰</label>
+        <div class="logo">
+            <img src="Logo.png" alt="Logo">
+        </div>
+        <nav>
+            <a href="index.html" class="item "><i class="fa-solid fa-house"></i>Class</a>
+            <a href="registration.html" class="item active"><i class="fa-regular fa-address-card"></i>Registration</a>
+            <a href="timeline.html" class="item"><i class="fa-solid fa-tv"></i> Timeline</a>
+            <a href="calendar.html" class="item"><i class="fa-regular fa-calendar"></i> Calendar</a>
+            <!-- <a href="lost$found.html" class="item"><i class="fa-solid fa-magnifying-glass"></i> Lost & Found</a>
+            <a href="campusNav.html" class="item"><i class="fa-solid fa-map-pin"></i> Campus Navigator</a> -->
+            <a href="acc.html" class="item"><i class="fa-solid fa-user"></i> Account</a>
+        </nav>
+        <!-- Move the Setting nav to the bottom by using flexbox -->
+        <nav>
+            <a href="setting.html" class="item"><i class="fa-solid fa-gear"></i> Setting</a>
+        </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <main>
+        <header>
+            <label for="sidebar-toggle" class="menu-btn">☰ Registration</label>
+            <div class="search-bar-container">
+                <div class="search-bar">
+                    <input type="text" placeholder="Search for something">
+                </div>
+                <div class="gear-profile">
+                    <i class="fa-regular fa-message"></i>
+                    <i class="fa-regular fa-bell"></i>
+                    <a href="setting.html"><i  class="fa-solid fa-gear"></i> </a>
+                    <div class="profile-icon">
+                        <a href="acc.html">
+                        <img src="rose.jpg" alt="Profile Picture">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="regi-content">
+            <div class="vmes">
+                <h4>Computer Science - VMES</h4>
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Course Code</th>
+                                <th>Name</th>
+                                <th>Tuition Payment</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>GE1411</td>
+                                <td><a href="#">Thai Language for Multicultural Communication</a></td>
+                                <td><button class="complete-btn">Complete</button></td>
+                            </tr>
+                            <tr>
+                                <td>ELE2000</td>
+                                <td><a href="#">Academic English</a></td>
+                                <td><button class="complete-btn">Complete</button></td>
+                            </tr>
+                            <tr>
+                                <td>BG14031</td>
+                                <td><a href="#">Professional Ethics Seminar-1</a></td>
+                                <td><button class="complete-btn">Complete</button></td>
+                            </tr>
+                            <tr>
+                                <td>ITX2005</td>
+                                <td><a href="#">Design Thinking</a></td>
+                                <td><button class="complete-btn">Complete</button></td>
+                            </tr>
+                            <tr>
+                                <td>CSX2008</td>
+                                <td><a href="#">Mathematics Foundation for Computer Science</a></td>
+                                <td><button class="complete-btn">Complete</button></td>
+                            </tr>
+                            <tr>
+                                <td>CSX3002</td>
+                                <td><a href="#">Objects Oriented Concepts & Programming</a></td>
+                                <td><button class="complete-btn">Complete</button></td>
+                            </tr>
+                            <tr>
+                                <td>CSX3002</td>
+                                <td><a href="#">Data Science</a></td>
+                                <td><button class="complete-btn">Complete</button></td>
+                            </tr>
+                            <tr>
+                                <td>CSX3002</td>
+                                <td><a href="#">Software Engineering</a></td>
+                                <td><button class="complete-btn">Complete</button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="subjects">
+                <h4>Petition For The Faculty</h4>
+                <div class="form-container">
+                    <form>
+                        <label for="request">Request For</label>
+                        <div class="select-wrapper">
+                            <select id="request" name="request">
+                                <option value="" disabled selected>Select an option</option>
+                                <option value="transcript">Transcript</option>
+                                <option value="certificate">Withdraw</option>
+                                <option value="certificate">Certificate</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+            
+                        <label for="reason">Reason</label>
+                        <input type="text" id="reason" name="reason">
+            
+                        <label for="detail">Detail</label>
+                        <textarea id="detail" name="detail"></textarea>
+            
+                        <label for="contact">Contact Number</label>
+                        <input type="text" id="contact" name="contact">
+            
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+                
+            </div>
+            <div class="curriculum">
+                <h4>Cirriculum Structure</h4>
+                <div class="accordion">
+                    
+            
+                    <div class="accordion-item">
+                        <button class="accordion-header">General Education Courses</button>
+                        <div class="accordion-content">
+                            <div class="course">
+                                <span class="course-name"><b>ELE 1001</b> Communicative English I (2-3-6)</span>
+                                <button class="status complete">Complete</button>
+                            </div>
+                            <div class="course">
+                                <span class="course-name"><b>ELE 2000</b> Academic English (3-0-6)</span>
+                                <button class="status complete">Complete</button>
+                            </div>
+                            <div class="course">
+                                <span class="course-name"><b>ELE 2001</b> Advanced Academic English (2-3-6)</span>
+                                <button class="expand">+</button>
+                            </div>
+                            <div class="course">
+                                <span class="course-name"><b>GE 1411</b> Thai Language for Multicultural Communication (2-0-4)
+                                </span>
+                                <button class="expand">+</button>
+                            </div>
+                            <div class="course">
+                                <span class="course-name"><b>GE 2110</b> Human Civilizations and Global Citizens (2-0-4)
+
+                                </span>
+                                <button class="expand">+</button>
+                            </div>
+                            <div class="course">
+                                <span class="course-name"><b>BBA 1007</b> Data Analytics for Entrepreneurs (2-2-5)</span>
+                                <button class="expand">+</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <button class="accordion-header">Specialized Courses</button>
+                        <div class="accordion-content">
+                            <div class="course">
+                                <span class="course-name"><b>CSX 2003</b> Principles of Statistics (3-0-6)</span>
+                                <button class="status complete">Complete</button>
+                            </div>
+                            <div class="course">
+                                <span class="course-name"><b>CSX 2006</b> Mathematics and Statistics for Data Science (3-0-6)</span>
+                                <button class="expand">+</button>
+                            </div>
+                            <div class="course">
+                                <span class="course-name"><b>CSX 2008</b> Mathematics Foundation for Computer Science (3-0-6)</span>
+                                <button class="expand">+</button>
+                            </div>
+                            <div class="course">
+                                <span class="course-name"><b>ITX 2005</b> Design Thinking (3-0-6)</span>
+                                <button class="expand">+</button>
+                            </div>
+                            <div class="course">
+                                <span class="course-name"><b>ITX 2007</b> Data Science (3-0-6)</span>
+                                <button class="expand">+</button>
+                            </div>
+                            <div class="course">
+                                <span class="course-name"><b>ITX 3007</b> Software Engineering (3-0-6)</span>
+                                <button class="expand">+</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- <div class="accordion-item">
+                        <button class="accordion-header">Major Elective Courses</button>
+                        <div class="accordion-content">
+                            <div class="course">
+                                <span class="course-name"><b>CSX 2003</b> Software Engineering and Development (SED)</span>
+                                <button class="status complete">Complete</button>
+                            </div>
+                            <div class="course">
+                                <span class="course-name"><b>CSX 2006</b> Informatics and Data Science (IDS)</span>
+                                <button class="expand">+</button>
+                            </div>
+                            <div class="course">
+                                <span class="course-name"><b>CSX 2008</b> Mathematics Foundation for Computer Science (3-0-6)</span>
+                                <button class="expand">+</button>
+                            </div>
+                            <div class="course">
+                                <span class="course-name"><b>ITX 2005</b> Design Thinking (3-0-6)</span>
+                                <button class="expand">+</button>
+                            </div>
+                            <div class="course">
+                                <span class="course-name"><b>ITX 2007</b> Data Science (3-0-6)</span>
+                                <button class="expand">+</button>
+                            </div>
+                            <div class="course">
+                                <span class="course-name"><b>ITX 3007</b> Software Engineering (3-0-6)</span>
+                                <button class="expand">+</button>
+                            </div>
+                        </div>
+                    </div> -->
+
+                    <div class="accordion-item">
+                        <button class="accordion-header">Major Elective Courses Group I</button>
+                        <div class="accordion-content">
+                            <div class="course">
+                                <span class="course-name"><b>ITX 3004</b> Information System Analysis and Design (3-0-6)
+                                </span>
+                                <button class="expand">+</button>
+                            </div>
+                            <div class="course">
+                                <span class="course-name"><b>ITX 4104</b> Software Testing (3-0-6)</span>
+                                <button class="expand">+</button>
+                            </div>
+                            <div class="course">
+                                <span class="course-name"><b>CSX 4107</b> Web Application Development (3-0-6)</span>
+                                <button class="expand">+</button>
+                            </div>
+                            <div class="course">
+                                <span class="course-name"><b>CSX 4109</b> Android Application Development (3-0-6)</span>
+                                <button class="expand">+</button>
+                            </div>
+                            <div class="course">
+                                <span class="course-name"><b>CSX 4110</b> Backend Application Development (3-0-6)</span>
+                                <button class="expand">+</button>
+                            </div>
+                            <div class="course">
+                                <span class="course-name"><b>CSX 4407</b> Enterprise Application Development (3-0-6)</span>
+                                <button class="expand">+</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <button class="accordion-header">Major Elective Courses Group II</button>
+                        <div class="accordion-content">
+                            <div class="course">
+                                <span class="course-name"><b>CSX 4108</b> iOS Application Development (3-0-6)</span>
+                                <button class="status complete">Complete</button>
+                            </div>
+                            <div class="course">
+                                <span class="course-name"><b>CSX 4202</b> Data Mining (3-0-6)
+                                </span>
+                                <button class="expand">+</button>
+                            </div>
+                            <div class="course">
+                                <span class="course-name"><b>CSX 4205</b> Big Data Analytics (3-0-6)</span>
+                                <button class="expand">+</button>
+                            </div>
+                            <div class="course">
+                                <span class="course-name"><b>CSX 4306</b>Internet of Things (3-0-6)</span>
+                                <button class="expand">+</button>
+                            </div>
+                            <div class="course">
+                                <span class="course-name"><b>CSX 4501</b> Theory of Computation (3-0-6)</span>
+                                <button class="expand">+</button>
+                            </div>
+                            <div class="course">
+                                <span class="course-name"><b>CSX 4510</b> Neural Networks (3-0-6)</span>
+                                <button class="expand">+</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <button class="accordion-header">Free Elective Courses</button>
+                        <div class="accordion-content">
+                            <div class="course">
+                                <span class="course-name"><b>CSX 2003</b> Principles of Statistics (3-0-6)</span>
+                                <button class="expand">+</button>
+                            </div>
+                            <div class="course">
+                                <span class="course-name"><b>CSX 2006</b> Mathematics and Statistics for Data Science (3-0-6)</span>
+                                <button class="expand">+</button>
+                            </div>
+                            <div class="course">
+                                <span class="course-name"><b>CSX 2008</b> Mathematics Foundation for Computer Science (3-0-6)</span>
+                                <button class="expand">+</button>
+                            </div>
+                            <div class="course">
+                                <span class="course-name"><b>ITX 2005</b> Design Thinking (3-0-6)</span>
+                                <button class="expand">+</button>
+                            </div>
+                            <div class="course">
+                                <span class="course-name"><b>ITX 2007</b> Data Science (3-0-6)</span>
+                                <button class="expand">+</button>
+                            </div>
+                            <div class="course">
+                                <span class="course-name"><b>ITX 3007</b> Software Engineering (3-0-6)</span>
+                                <button class="expand">+</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="accordion-item">
+                        <button class="accordion-header">Specialized Courses</button>
+                        <div class="accordion-content">
+                            <div class="course">
+                                <span class="course-name"><b>CSX 2003</b> Principles of Statistics (3-0-6)</span>
+                                <button class="status complete">Complete</button>
+                            </div>
+                            <div class="course">
+                                <span class="course-name"><b>CSX 2006</b> Mathematics and Statistics for Data Science (3-0-6)</span>
+                                <button class="expand">+</button>
+                            </div>
+                            <div class="course">
+                                <span class="course-name"><b>CSX 2008</b> Mathematics Foundation for Computer Science (3-0-6)</span>
+                                <button class="expand">+</button>
+                            </div>
+                            <div class="course">
+                                <span class="course-name"><b>ITX 2005</b> Design Thinking (3-0-6)</span>
+                                <button class="expand">+</button>
+                            </div>
+                            <div class="course">
+                                <span class="course-name"><b>ITX 2007</b> Data Science (3-0-6)</span>
+                                <button class="expand">+</button>
+                            </div>
+                            <div class="course">
+                                <span class="course-name"><b>ITX 3007</b> Software Engineering (3-0-6)</span>
+                                <button class="expand">+</button>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <div class="accordion-item">
+                        <button class="accordion-header">Major Elective Courses</button>
+                    </div>
+            
+                    <div class="accordion-item">
+                        <button class="accordion-header">Major Elective Courses Group I</button>
+                    </div>
+            
+                    <div class="accordion-item">
+                        <button class="accordion-header">Major Elective Courses Group II</button>
+                    </div>
+            
+                    <div class="accordion-item">
+                        <button class="accordion-header">Free Elective Courses</button>
+                    </div> -->
+                </div>
+            </div>
+            
+            
+        </div>
+    </main>
+</body>
+</html>

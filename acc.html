@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unilife</title>
+    <script src="https://kit.fontawesome.com/c4f1b21a57.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="png" href="Favicon.png">
+</head>
+<body>
+
+    <!-- Sidebar Toggle Button (Checkbox) -->
+    <input type="checkbox" checked id="sidebar-toggle" class="sidebar-checkbox">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <label for="sidebar-toggle" class="close-btn">☰</label>
+        <div class="logo">
+            <img src="Logo.png" alt="Logo">
+        </div>
+        <nav>
+            <a href="index.html" class="item"><i class="fa-solid fa-house"></i>Class</a>
+            <a href="registration.html" class="item"><i class="fa-regular fa-address-card"></i>Registration</a>
+            <a href="timeline.html" class="item"><i class="fa-solid fa-tv"></i> Timeline</a>
+            <a href="calendar.html" class="item"><i class="fa-regular fa-calendar"></i> Calendar</a>
+            <!-- <a href="lost$found.html" class="item"><i class="fa-solid fa-magnifying-glass"></i> Lost & Found</a>
+            <a href="campusNav.html" class="item"><i class="fa-solid fa-map-pin"></i> Campus Navigator</a> -->
+            <a href="acc.html" class="item active"><i class="fa-solid fa-user"></i> Account</a>
+        </nav>
+        <!-- Move the Setting nav to the bottom by using flexbox -->
+        <nav>
+            <a href="setting.html" class="item"><i class="fa-solid fa-gear"></i> Setting</a>
+        </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <main>
+        <header>
+            <label for="sidebar-toggle" class="menu-btn">☰ Account</label>
+            <div class="search-bar-container">
+                <div class="search-bar">
+                    <input type="text" placeholder="Search for something">
+                </div>
+                <div class="gear-profile">
+                    <i class="fa-regular fa-message"></i>
+                    <i class="fa-regular fa-bell"></i>
+                   <a href="setting.html"><i  class="fa-solid fa-gear"></i> </a>
+                    <div class="profile-icon">
+                        <img src="rose.jpg" alt="Profile Picture">
+                    </div>
+                </div>
+            </div>
+            </header>
+            <div class="main-content">
+                <div class="profile-card">
+                    <img src="rose.jpg" alt="">
+                    <h3>Rosé Park</h3>
+                    <p> <strong>672**** </strong> | <strong>4.0 G.P.A</strong> | <strong>36 Credit</strong></p>
+                    <div class="profile-details">
+                        <div>
+                            <label>First Name</label>
+                            <input type="text" value="Rosé">
+                        </div>
+                        <div>
+                            <label>Last Name</label>
+                            <input type="text" value="Park">
+                        </div>
+                        <div>
+                            <label>Faculty</label>
+                            <input type="text" value="VMES">
+                        </div>
+                        <div>
+                            <label>Department</label>
+                            <input type="text" value="Computer Science">
+                        </div>
+                        <div>
+                            <label>Email</label>
+                            <input type="text" value="blackpink@gmail.com">
+                        </div>
+                        <div>
+                            <label>Country/Region</label>
+                            <input type="text" value="Korea">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </body>
+        </html>
