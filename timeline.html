@@ -44,7 +44,57 @@
                     <input type="text" placeholder="Search for something">
                 </div>
                 <div class="gear-profile">
-                    <i class="fa-regular fa-message"></i>
+                    <!-- chatBoxIsBelow -->
+                    <i id="chat-toggle" class="fa-regular fa-message"></i>
+                    <!-- Background Overlay -->
+                    <script defer src="script.js"></script>
+                    <div id="chat-overlay" class="chat-overlay"></div>
+                    <div id="chat-box" class="chat-box">
+                        <div class="chat-header">Chat</div>
+                        
+                        <div class="forum-input">
+                            <input type="text" placeholder="Search AU fellows">
+                            <button>Search</button>
+                        </div>
+                        <div class="chat-content">
+                            <div class="chat-user">
+                                <img src="profile1.jpg" alt="User">
+                                <div class="chat-text">
+                                    <p><strong>Martin Randolph</strong></p>
+                                    <p>You: What's up! - 9:40 AM</p>
+                                </div>
+                            </div>
+                            <div class="chat-user">
+                                <img src="profile2.avif" alt="User">
+                                <div class="chat-text">
+                                    <p><strong>Andrew Parker</strong></p>
+                                    <p>You: Ok, thanks! - 9:25 AM</p>
+                                </div>
+                            </div>
+                            <div class="chat-user">
+                                <img src="profile3.avif" alt="User">
+                                <div class="chat-text">
+                                    <p><strong>Karen Castillo</strong></p>
+                                    <p>You: Ok, See you in Tuesday - Fri</p>
+                                </div>
+                            </div>
+                            <div class="chat-user">
+                                <img src="profile4.jpg" alt="User">
+                                <div class="chat-text">
+                                    <p><strong>Maisy Humphrey</strong></p>
+                                    <p>Have a good day, Maisy! - Fri</p>
+                                </div>
+                            </div>
+                            <div class="chat-user">
+                                <img src="profile5.avif" alt="User">
+                                <div class="chat-text">
+                                    <p><strong>Joshua Lawrence</strong></p>
+                                    <p>The business plan loo... - Thu</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- chatBoxIsAbove -->
                     <i class="fa-regular fa-bell"></i>
                    <a href="setting.html"><i  class="fa-solid fa-gear"></i> </a>
                     <div class="profile-icon">
@@ -114,7 +164,7 @@
                 <h2>Uni Forum</h2>
                 <div class="forum-list">
                     <div class="forum-input">
-                        <input type="text" placeholder="Connect with fellow AU students here!">
+                        <input type="text" placeholder="Contact with fellow AU students here!">
                         <button>Post</button>
                     </div>
                     <div class="forum-post">
@@ -130,7 +180,7 @@
                         </div>
 
                         <div class="timelineBtn">
-                            <button>Add response</button>
+                            <button>Add response </button>
                             <button id="likeBtn" onclick="toggleLike()"><i class="fa-solid fa-thumbs-up"></i><span id="likeCount"> 10</span></button>
                         </div>
                         
@@ -175,7 +225,7 @@
                         <h3>Looking for a teammate</h3>
                         <div class="forumContent">
                             <div class="posticon">
-                                <img src="profile12.jpg" alt="Profile Picture">
+                                <img src="profile11.webp" alt="Profile Picture">
                             </div>
                             <div class="posttext">
                                 <p><strong>John Hank</strong> - 10h ago</p>

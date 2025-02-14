@@ -6,6 +6,7 @@
     <title>Unilife</title>
     <script src="https://kit.fontawesome.com/c4f1b21a57.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles.css">
+    
     <link rel="icon" type="png" href="Favicon.png">
 </head>
 <body>
@@ -43,7 +44,57 @@
                     <input type="text" placeholder="Search for something">
                 </div>
                 <div class="gear-profile">
-                    <i class="fa-regular fa-message"></i>
+                    <!-- chatBoxIsBelow -->
+                    <i id="chat-toggle" class="fa-regular fa-message"></i>
+                    <!-- Background Overlay -->
+                    <script defer src="script.js"></script>
+                    <div id="chat-overlay" class="chat-overlay"></div>
+                    <div id="chat-box" class="chat-box">
+                        <div class="chat-header">Chat</div>
+                        
+                        <div class="forum-input">
+                            <input type="text" placeholder="Search AU fellows">
+                            <button>Search</button>
+                        </div>
+                        <div class="chat-content">
+                            <div class="chat-user">
+                                <img src="profile1.jpg" alt="User">
+                                <div class="chat-text">
+                                    <p><strong>Martin Randolph</strong></p>
+                                    <p>You: What's up! - 9:40 AM</p>
+                                </div>
+                            </div>
+                            <div class="chat-user">
+                                <img src="profile2.avif" alt="User">
+                                <div class="chat-text">
+                                    <p><strong>Andrew Parker</strong></p>
+                                    <p>You: Ok, thanks! - 9:25 AM</p>
+                                </div>
+                            </div>
+                            <div class="chat-user">
+                                <img src="profile3.avif" alt="User">
+                                <div class="chat-text">
+                                    <p><strong>Karen Castillo</strong></p>
+                                    <p>You: Ok, See you in Tuesday - Fri</p>
+                                </div>
+                            </div>
+                            <div class="chat-user">
+                                <img src="profile4.jpg" alt="User">
+                                <div class="chat-text">
+                                    <p><strong>Maisy Humphrey</strong></p>
+                                    <p>Have a good day, Maisy! - Fri</p>
+                                </div>
+                            </div>
+                            <div class="chat-user">
+                                <img src="profile5.avif" alt="User">
+                                <div class="chat-text">
+                                    <p><strong>Joshua Lawrence</strong></p>
+                                    <p>The business plan loo... - Thu</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- chatBoxIsAbove -->
                     <i class="fa-regular fa-bell"></i>
                     <a href="setting.html"><i  class="fa-solid fa-gear"></i> </a>
                     <div class="profile-icon">

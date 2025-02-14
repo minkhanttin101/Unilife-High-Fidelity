@@ -752,7 +752,7 @@ h2 {
 .forum-input {
     display: flex;
     gap: 10px;
-    margin-top: 20px;
+    margin: 10px 10px 0px 10px;
 }
 
 .forum-input input {
@@ -783,6 +783,7 @@ h2 {
 .forum-post button {
     width: 100px;
     padding: 10px 15px;
+    margin: 5px;
     border: none;
     background-color: #275c96;
     color: white;
@@ -817,6 +818,8 @@ h2 {
 //////////////*/
 
 .calendarMain{
+    font-family: Arial, sans-serif;
+    font-size: bold;
     display: flex;
     margin: 0px;
     gap: 20px;
@@ -963,6 +966,7 @@ header .calendar-current-date {
 .calendar-events h3 {
     margin: 0;
     padding-bottom: 10px;
+    font-family: Arial, sans-serif;;
     font-size: 18px;
     color: #007bff;
 }
@@ -1234,6 +1238,112 @@ input:checked + .slider:before {
     margin-bottom: 10px;
 }
 
+/* chatbox css is below*/
+/* Chat Icon */
+.chat-icon {
+    position: fixed;
+    top: 20px;
+    right: 80px;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 1001;
+}
+
+/* Chat Box */
+.chat-box {
+    position: fixed;
+    top: 70px;
+    right: 20px;
+    width: 300px;
+    background: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    overflow: hidden;
+    z-index: 1002;
+    display: none;
+}
+
+.chat-box.open {
+    display: block;
+}
+
+/* Chat Header */
+.chat-header {
+    padding: 15px;
+    font-size: 18px;
+    background: #E8E7E7;
+    color: black;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    cursor: pointer;
+}
+
+.close-chat {
+    background: none;
+    border: none;
+    color: black;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* Chat Content */
+.chat-content {
+    padding: 10px;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+/* Chat User Item */
+.chat-user {
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+}
+
+.chat-user img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.chat-text {
+    font-size: 14px;
+}
+
+.chat-text p {
+    margin: 2px 0;
+}
+/* Background overlay (when chat is open) */
+.chat-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent */
+    z-index: 900;
+    display: none;
+}
+
+/* Show overlay when chat is open */
+.chat-overlay.active {
+    display: block;
+}
+
+/* Background Opacity when Chat Box is Open */
+body.chat-active::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 1000;
+}
+/* chatbox css is below*/
 
 /* @media (max-width: 768px) {
     body {
@@ -1290,6 +1400,7 @@ input:checked + .slider:before {
         height: auto;
         object-fit: cover;
         border-radius: 10px;
+        cursor: pointer;
     }
     
     .subjects img {
@@ -1304,6 +1415,7 @@ input:checked + .slider:before {
         height: auto;
         object-fit: cover;
         border-radius: 10px;
+        cursor: pointer;
     }
 
     .box {
