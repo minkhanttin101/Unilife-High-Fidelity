@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unilife</title>
+    <script src="https://kit.fontawesome.com/c4f1b21a57.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="png" href="Favicon.png">
+    
+
+</head>
+<body>
+
+    <!-- Sidebar Toggle Button (Checkbox) -->
+    <input type="checkbox" id="sidebar-toggle" class="sidebar-checkbox">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <label for="sidebar-toggle" class="close-btn">☰</label>
+        <div class="logo">
+            <img src="Logo.png" alt="Logo">
+        </div>
+        <nav>
+            <a href="index.html" class="item"><i class="fa-solid fa-house"></i>Class</a>
+            <a href="registration.html" class="item"><i class="fa-regular fa-address-card"></i>Registration</a>
+            <a href="timeline.html" class="item"><i class="fa-solid fa-tv"></i> Timeline</a>
+            <a href="calendar.html" class="item"><i class="fa-regular fa-calendar"></i> Calendar</a>
+            <a href="lostandfound.html" class="item active"><i class="fa-solid fa-magnifying-glass"></i> Lost & Found</a>
+            <!-- <a href="campusNav.html" class="item"><i class="fa-solid fa-map-pin"></i> Campus Navigator</a> -->
+            <a href="acc.html" class="item"><i class="fa-solid fa-user"></i> Account</a>
+        </nav>
+        <!-- Move the Setting nav to the bottom by using flexbox -->
+        <nav>
+            <a href="setting.html" class="item"><i class="fa-solid fa-gear"></i> Setting</a>
+        </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <main>
+        <header>
+            <label for="sidebar-toggle" class="menu-btn">☰ Lost & Found</label>
+            <div class="search-bar-container">
+                <div class="search-bar">
+                    <input type="text" placeholder="Search for something">
+                </div>
+                <div class="gear-profile">
+                    <i class="fa-regular fa-message"></i>
+                    <i class="fa-regular fa-bell"></i>
+                    <a href="setting.html"><i  class="fa-solid fa-gear"></i> </a>
+                    <div class="profile-icon">
+                        <a href="acc.html">
+                        <img src="rose.jpg" alt="Profile Picture">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="container">
+            <!-- <div class="status-message"># Inform Lost Items<br>Thank you for informing.</div>
+            <div class="status-message">## Inform Found Items<br>Thank you for informing.</div> -->
+            <div class="abc">
+                
+                <div class="abc-upload-section">
+                    <img src="uploadicon.png" alt="Upload Icon">
+                </div>
+        
+                <div class="abc-toggle-buttons">
+                    <button class="abc-active">Lost</button>
+                    <button>Found</button>
+                </div>
+        
+                <form class="abc-input-section">
+                    <label>Items:</label>
+                    <input type="text" placeholder="Add Items name">
+        
+                    <label>Date:</label>
+                    <input type="date">
+        
+                    <!-- <label>Location:</label>
+                    <input type="text" placeholder="Add Location"> -->
+        
+                    <button class="abc-post-button" type="submit">Inform</button>
+                    <label>Connect with L&F office to retrieve lost items</label>
+                </form>
+            </div>
+            <h2 class="section-title">Informed Lost Items</h2>
+            <div class="items-container">
+                <div class="item-card">
+                    
+                    <div>
+                        <div class="profile-icon">
+                            <a href="acc.html">
+                            <img src="profile1.jpg" alt="Profile Picture">
+                            </a>
+                        </div>
+                        <h3>Elara Skye</h3>
+                        <div class="item-detail"><strong>Items:</strong> Air pods 2</div>
+                    </div>
+                    <div class="lfphoto">
+                        <img src="airpod.png" alt="Upload Icon">
+                    </div>
+                    <!-- <div class="item-detail"><strong>Inform Date:</strong> 12/06/2024</div>
+                    <div class="item-detail"><strong>Location:</strong> SM 244</div> -->
+                </div>
+                <div class="item-card">
+                    <div>
+                        <div class="profile-icon">
+                            <a href="acc.html">
+                            <img src="profile2.avif" alt="Profile Picture">
+                            </a>
+                        </div>
+                        <h3>Anya Rose</h3>
+                        <div class="item-detail"><strong>Items:</strong> Ipad Air2</div>
+                    </div>
+                    <div class="lfphoto">
+                        <img src="ipad.jpeg" alt="Upload Icon">
+                    </div>
+                    <!-- <div class="item-detail"><strong>Inform Date:</strong> 21/11/2024</div>
+                    <div class="item-detail"><strong>Location:</strong> Au Mall</div> -->
+                </div>
+            </div>
+    
+            <h2 class="section-title">Informed Found Items</h2>
+            <div class="items-container">
+                <div class="item-card">
+                    <div>
+                        <div class="profile-icon">
+                            <a href="acc.html">
+                            <img src="profile3.avif" alt="Profile Picture">
+                            </a>
+                        </div>
+                        <h3>Willow Dawn</h3>
+                        <div class="item-detail"><strong>Items:</strong> Power Bank</div>
+                    </div>
+                    <div class="lfphoto">
+                        <img src="power.jpg" alt="Upload Icon">
+                    </div>
+                    <!-- <div class="item-detail"><strong>Inform Date:</strong> 17/12/2024</div>
+                    <div class="item-detail"><strong>Location:</strong> CL mall</div> -->
+                </div>
+                <div class="item-card">
+                    <div>
+                        <div class="profile-icon">
+                            <a href="acc.html">
+                            <img src="profile4.jpg" alt="Profile Picture">
+                            </a>
+                        </div>
+                        <h3>Lyra Moon</h3>
+                        <div class="item-detail"><strong>Items:</strong> Air pods 2</div>
+                    </div>
+                    <div class="lfphoto">
+                        <img src="airpod.png" alt="Upload Icon">
+                    </div>
+                    <!-- <div class="item-detail"><strong>Inform Date:</strong> 23/12/2024</div>
+                    <div class="item-detail"><strong>Location:</strong> Au Mall</div> -->
+                </div>
+            </div>
+    
+            
+        </div>
+    </main>
+</body>
+</html>

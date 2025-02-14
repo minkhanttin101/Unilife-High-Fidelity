@@ -216,7 +216,7 @@ h4{
 }
 .timetable img {
     max-width: 40vw;
-    min-width: 370px;
+    min-width: auto;
     height: auto;
     object-fit: cover;
     border-radius: 10px;
@@ -233,9 +233,9 @@ h4{
 
 .examination img {
     width: 40vw;
-    height: 85%;
+    height: auto;
     object-fit: cover;
-    border-radius: 10px;
+    border-radius: 0px;
 }
 
 .images-container {
@@ -452,6 +452,12 @@ td a:hover {
     text-decoration: none;
 }
 
+.coompleteAll{
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
+
 .complete-btn {
     background: white;
     width: 140px;
@@ -462,6 +468,7 @@ td a:hover {
     cursor: pointer;
     font-weight: bold;
 }
+
 
 .complete-btn:hover {
     background: #f0f0f0;
@@ -624,7 +631,7 @@ select {
 
 
 button {
-    width: 88%;
+    width: 88%;;
     height: 30px;
     background: #c4c4c4;
     color: black;
@@ -1107,6 +1114,151 @@ input:checked + .slider:before {
     color: #666;
 }
 
+
+/* lostandfound */
+
+
+.container {
+    /* max-width: 1000px; */
+    margin: 0 auto;
+}
+.status-message {
+    text-align: center;
+    color: #666;
+    margin: 20px 0;
+    font-size: 1.2em;
+}
+.section-title {
+    color: #333;
+    margin: 30px 0 15px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #ddd;
+}
+.items-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+.item-card {
+    display: flex;
+    justify-content: space-around;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.item-card h3 {
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+.item-detail {
+    margin: 8px 0;
+    color: #666;
+    font-size: 0.9em;
+}
+.item-detail strong {
+    color: #333;
+    margin-right: 5px;
+}
+.placeholder-section {
+    background: #f8f9fa;
+    border: 2px dashed #ddd;
+    padding: 20px;
+    color: #999;
+    margin-top: 20px;
+}
+
+.abc {
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    text-align: center;
+    border-radius: 10px;
+}
+    
+.abc-upload-section img {
+    width: 100%;
+    max-width: 200px;
+    margin-bottom: 10px;
+}
+    
+.abc-toggle-buttons {
+    /* width: 50%; */
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+.abc-toggle-buttons button {
+    width: 100px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    background-color: lightgray;
+}
+.abc-toggle-buttons .abc-active {
+    background-color: #6c7ae0;
+    color: white;
+}
+.abc-input-section {
+    text-align: left;
+}
+.abc-input-section label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+.abc-input-section input {
+    /* width: 50%; */
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.abc-post-button {
+    width: 92%;
+    padding: 10px;
+    background-color: gray;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.lfphoto img{
+    width: 100px;
+    height: 100px;
+    max-width: 200px;
+    margin-bottom: 10px;
+}
+
+
+/* @media (max-width: 768px) {
+    body {
+         padding: 10px;
+    }
+    .section-title {
+        font-size: 1.4em;
+    }  
+    .item-card {
+        padding: 15px;
+    }
+}
+@media (max-width: 480px) {
+    .status-message {
+        font-size: 1em;
+    }
+    
+    .item-card h3 {
+        font-size: 1.1em;
+    }
+    
+    .item-detail {
+        font-size: 0.85em;
+    }
+} */
 /* Responsive */
 @media (max-width: 726px) {
     .sidebar {
