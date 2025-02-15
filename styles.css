@@ -1414,7 +1414,7 @@ body.chat-active::before {
         width: 100vw;
         height: auto;
         object-fit: cover;
-        border-radius: 0px;
+        border-radius: 10px;
         cursor: pointer;
     }
 
